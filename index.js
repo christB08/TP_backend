@@ -19,6 +19,11 @@ const dbConfig = {
   }
 };
 
+// Redirection de la racine vers /api/data
+app.get('/', (req, res) => {
+  res.redirect('/api/data');
+});
+
 app.get('/api/data', async (req, res) => {
   try {
     await sql.connect(dbConfig);
