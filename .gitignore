@@ -11,3 +11,4 @@ node_modules/
 # Ignorer les fichiers de build
 dist/ 
 build/
+TP_backend/
